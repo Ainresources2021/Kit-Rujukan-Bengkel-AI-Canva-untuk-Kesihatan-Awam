@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Custom palette matching a professional PKD (Pejabat Kesihatan Daerah) and KKM vibe:
+     Primary is a robust medical/public health blue, secondary is soft caring teal, accent is warm safety orange. */
+  --color-pkd-blue: #0b4f8c;
+  --color-pkd-dark: #07335c;
+  --color-pkd-teal: #107c82;
+  --color-pkd-light: #f0f7fc;
+  --color-pkd-soft-teal: #eef9f9;
+  --color-pkd-accent: #f59e0b; /* Yellow/Orange */
+  --color-pkd-accent-hover: #d97706;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #f8fafc;
+  color: #1e293b;
+  min-height: 100vh;
+}
+
+/* Ensure accessible and highly visible focus states and clean scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* High contrast outline for buttons if targeted by keyboard */
+button:focus-visible {
+  outline: 3px solid #f59e0b;
+}
+
+/* Custom visual class for large readable prose */
+.bengkel-prose {
+  font-size: 1.125rem; /* 18px */
+  line-height: 1.75rem;
+}

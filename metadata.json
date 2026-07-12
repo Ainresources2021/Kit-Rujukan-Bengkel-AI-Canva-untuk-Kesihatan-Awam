@@ -1,0 +1,6 @@
+{
+  "name": "Kit Rujukan: Prompt ke Poster",
+  "description": "Kit rujukan interaktif Bengkel AI & Canva untuk Kesihatan Awam bagi staf PKD Sabak Bernam.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
